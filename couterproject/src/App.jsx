@@ -6,7 +6,8 @@ function App() {
   const [couter, setCouter] = useState(0);
 
   const addValue = () => {
-    setCouter(couter+1)
+    setCouter(prevCouter => prevCouter + 2)
+    setCouter(prevCouter => prevCouter + 2)
   }
 
   const removeValue = () => {
