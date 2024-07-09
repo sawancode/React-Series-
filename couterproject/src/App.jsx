@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './App.css'
 
 function App() {
@@ -26,8 +26,11 @@ function App() {
       <button onClick={removeValue}>Remove Value {couter}</button>
 
       <p>Footer: {couter}</p>
+
+
     </>
   )
+
 }
 
 export default App
